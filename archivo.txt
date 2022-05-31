@@ -1,1 +1,3 @@
-hola mundo
+Entendiendo cómo funciona GIT
+GIT es el SCV (sistema de control de versiones) de código abierto más utilizado que te permite rastrear los
+cambios realizados en los archivos. Las empresas y los programadores suelen utilizar el GIT para colaborar
