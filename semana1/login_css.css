@@ -1,16 +1,29 @@
 .padre{
+    margin: 5%;
     display: flex; /* dipley para poder usarlo*/
+    
 background-color: aquamarine; 
-padding: 20px;
+padding: 15px;
  align-items: center;
  justify-content: center;
+ width: w;
+ height: 80%;
+
+}
+h2{
+    color: rgb(124, 127, 129);
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 0px;
 }
 h1{
     text-align: center;
-    padding: 20px;
+   
+    padding: -15px;
     color: aliceblue;
     font-family: 'Roboto', sans-serif;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 }
  label{
     font-family: 'Roboto', sans-serif;
@@ -37,6 +50,7 @@ text-align: center;
  width: 350px;
  height: 400px;
  border-radius: 30px;
+ box-shadow: 15px 21px 26px -1px rgba(0,0,0,0.75);
 }
 
 .iniciar{
@@ -79,7 +93,7 @@ background: #1BE08B;
     
     width: 172px;
     border-radius: 20px;
-    margin-top: 80px;
+    margin-top: 50px;
     
     padding: 20px;
 
