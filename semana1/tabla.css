@@ -1,0 +1,49 @@
+table{
+padding: 15px;
+background: black;
+border: solid 1px;
+color: aliceblue;
+font-family: 'Roboto', sans-serif;
+border-radius: 25px;
+
+}
+th{
+    padding: 10px;
+    font-size: 20px;
+}
+td{
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px;
+}
+.fila1{
+background-color: rgb(66, 65, 65);
+
+text-align: center;
+
+}
+
+.fila2{
+    text-align: center;
+    background-color: rgb(41, 43, 155);
+   
+    }
+    div{
+        display: flex; 
+    
+background-color: aquamarine; 
+padding: 15px;
+ align-items: center;
+ justify-content: center;
+    }
+    .ga{
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px;
+    }
+   td:hover{
+
+    background: brown;
+
+    }
