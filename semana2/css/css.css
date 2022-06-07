@@ -1,0 +1,115 @@
+body{
+
+    font-family:  Arial, Helvetica, sans-serif;
+}
+
+h1{
+
+  
+font-family: 'Monoton', cursive;
+
+font-size: 72px;
+color: aliceblue;
+font-weight: 400;
+background-color: rgb(24, 24, 24);
+}
+
+.parrafo:hover{
+
+  /*  text-shadow: 2px 2px 8px #e6d710;*/
+}
+.parrafo{
+   
+   
+    font-family: 'Rubik', sans-serif;
+font-size: 50px;
+
+text-shadow: 2px 2px 8px #6d6d6a;
+
+/*font size por defecto 16px
+font weight  va de 100 a 900 no lleva medida metrica
+
+700 = bold
+900 = bolder
+*/
+
+/**/
+
+font-weight: 900;
+text-decoration: none;
+
+}
+/*
+
+nexadecimL
+rgb=
+RGBA
+ALPHA OPACIDAD
+*/
+.link-a{
+
+    font-size: 35px;
+    font-family: -apple-system, Arial, Helvetica, sans-serif;
+/*  quita el subrayado*/
+    text-decoration: none;
+    color: rgb(110, 144, 216,0.2);
+
+}
+UL{
+  font-size: 25px;
+    background: rgba(119, 113, 196, 0.2);
+}
+.span-1{
+    text-decoration: line-through;
+}
+.span-2{
+text-decoration: overline;
+
+}
+.span-3{
+    text-decoration: underline;
+    font-size: 30px;
+    font-weight: 900;
+   
+}
+.span-4{
+   
+  
+
+    
+}
+.span-5{
+    text-decoration: underline;
+    background-color: blueviolet;
+    text-decoration-color: rgb(224, 210, 12);
+}
+
+.span-6{
+    text-decoration: underline;
+    background-color: rgb(231, 217, 10);
+    text-decoration-color: rgb(112, 198, 224);
+    color: blue;
+    text-transform: lowercase;
+}
+/*<!-- ! para cargar fuente descardas se hace @font-face -->*/
+@font-face {
+    /* nombre de font  puede ser cual nombre pero por buenas se nombrar nombre oficial*/
+    font-family:"Rubik-Italic-VariableFont_wght" ;
+    /*ubicaion */
+    src: url("../font/Rubik-Italic-VariableFont_wght.ttf");
+}
+
+
+@font-face {
+    /* nombre de font*/
+    font-family:"Rubik-VariableFont_wght" ;
+    /*ubicaion */
+    src: url("../font/Rubik-VariableFont_wght.ttf");
+}
+.title-1{
+
+    font-family:"Rubik-Italic-VariableFont_wght";
+}
+.title-2{
+    font-family:"Rubik-VariableFont_wght"  ;
+}
