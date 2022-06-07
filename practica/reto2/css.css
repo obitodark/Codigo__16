@@ -1,0 +1,117 @@
+.container{
+
+display: flex;
+justify-content: center;
+align-items: center;
+height: 1000px;
+background-color: #0D1A2D;
+
+font-family: 'Roboto', sans-serif;  
+
+}
+.box-1{
+
+    background: #15273F; 
+    border-radius: 20px;
+    width: 380px;
+    border-radius: 22px;
+   
+
+box-shadow:  19px 19px 5px #0C1729,
+             -19px -19px 0px #0C192C;
+}
+.imagen-1{
+    
+    width: 86%;
+    margin-left: 7%;
+    margin-top: 7%;
+    height: 320px;
+    border-radius: 25px;
+    background: url(./images/image-equilibrium.jpg);
+    background-size: cover;
+    
+
+ 
+}
+.imagen-1:hover{
+   
+    background: linear-gradient( rgba(138, 213, 216, 0.50),
+    rgba(138, 213, 216, 0.50)),url(./images/image-equilibrium.jpg);
+    background-size: cover;
+ 
+}
+.encabezado{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    font-weight: 450;
+    margin-left: 7%;
+}
+.parrafo{
+    letter-spacing: 1px;
+    font-size: 18px;
+    margin-left: 7%;
+    display: block;
+    color: #6F84A9;
+    font-family: 'Roboto', sans-serif;
+}
+.box-2{
+    display: flex;
+    justify-content: space-between;
+}
+.precio{
+     
+    color: #00FFF8;
+    font-size: 15px;
+    margin-left: 7%;
+    font-weight: 500;
+    
+    height: 15px;
+    line-height: 15px;
+}
+.img1{
+
+    margin-right: 5px
+}
+.tiempo{
+    color: #8EB0DD;
+    font-size: 15px;
+    margin-right: 7%;
+    font-weight: 500;
+  
+}
+.img2{
+    margin-right: 5px;
+}
+hr{
+    width: 80%;
+    height: -5px;
+    color: #00FFF8;
+ background: #00FFF8;
+}
+.img3
+{
+
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    border: 1px solid white;
+
+}
+.name-1{
+    color: #8EB0DD;
+    font-size: 15px;
+    font-weight: 350;
+    margin-left: 7px;
+    margin-right: 5px;
+    height: 40px;
+    line-height: 40px;
+}
+.name-2{
+    color: white;
+    font-size: 15px;
+    font-weight: 350;
+}
+.avatar{
+margin-left: 7%;
+}
