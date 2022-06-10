@@ -1,0 +1,186 @@
+body{
+
+    font-family: 'Roboto', sans-serif;
+    background-color: #0D1323;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #0D1323;
+  
+}
+.box{
+    width: 1500px;
+    background-color: white;
+    display: flex;
+   
+ 
+}
+.box-big{
+    width: 230px;
+    background-color: #1D204B;
+    color: white;
+    height: 510px;
+    
+}
+.box-big2{
+    background-color: #6759e6;
+    text-align: center;
+    height: 350px;
+}
+
+.border{
+    border-radius: 15px;
+    width: 230px;
+    position: relative;
+    color: white;
+   
+    
+}
+.avatar{
+    
+    width: 75px;
+    border: 3px solid white;
+    border-radius: 75px;
+    margin-top: 30px;
+    margin-right: 100px;
+    margin-bottom: 25px;
+
+}
+.report{
+    width: 150;
+    font-weight: 400;
+    font-size: 13px;
+    color: rgb(211, 211, 212);
+    padding-right: 110px;
+ 
+   
+}
+.name-big{
+ margin: -10px;
+    font-weight: 300;
+    width: 150px;
+    padding-left: 20px;
+    
+    
+}
+.dally{
+    margin-top: 1em;
+    margin-right: 140px;
+    text-align: center;
+    display: block;
+    color: rgb(141, 135, 189);
+    text-decoration: none;
+}
+.dally:hover{
+    
+    color: white;
+}
+.week-big{
+    font-size: 15px;
+    text-align: center;
+    margin-right: 120px;
+    padding: 10px;
+}
+span{
+    display: block;
+    color: rgb(141, 135, 189);
+    font-size: 1em;
+    margin-right: 120px;
+    text-align: center;
+}
+.box-subsmall{
+    background-color: #1D204B;
+   
+    margin-left: 0px;
+    height: 200px;
+    position: absolute;
+    top: 45px;
+
+}
+.small{
+
+    position: relative;
+    height: 245px;
+    margin: 10px;
+}
+.box-small1{
+    background-color: #FF8B64;
+  
+
+  
+ 
+    
+}
+
+.box-small2{
+    background-color: #56C2E6;
+    
+}
+.box-small3{
+    background-color: #FF5E7D;
+   
+}
+
+.box-small4{
+    background-color: #4BCF83;
+  
+}
+
+.box-small5{
+    background-color: #7235D1;
+    
+}
+
+.box-small6{
+    background-color: #F1C65B;
+ 
+}
+.img{
+    
+    width: 70px;
+    margin-left:150px ;
+}
+.container2{
+    position: absolute;
+    top: 0px;
+    left: 450px;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #4BCF83;
+}
+.subbox{
+    background-color: #7235D1;
+    width: 250px;
+}
+.name{
+    text-align: center;
+    
+    font-size: 17px;
+    font-weight: 550;
+    color: rgb(229, 231, 233);
+}
+a{
+    padding-left: 100px;
+    text-decoration: none;
+    color: rgb(184, 184, 192);
+    font-size: 25px;
+}
+.time{
+    text-align: center;
+    font-size: 3em;
+    font-weight: 300;
+    padding-right: 80px;
+    margin-top: 20px;
+}
+.week{
+ text-align: center;
+    font-size: 0.9em;
+    color: rgb(179, 180, 207);
+    padding-right: 65px;
+}
