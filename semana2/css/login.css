@@ -1,0 +1,78 @@
+body{
+
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    margin-top: 100px;
+  text-align: center;
+  padding-top: 20px;
+  
+}
+.container{
+ 
+    width: 400px;
+    height: 350px;
+    margin: 100px auto;
+ 
+    border-radius: 50px;
+
+    border-radius: 50px;
+background: #dedede;
+box-shadow:  20px 20px 60px #bdbdbd,
+             -20px -20px 60px #ffffff;
+}
+form{
+    margin: 30px;
+}
+.name{
+    padding: 20px;
+}
+.pass{
+    padding: 20px;
+}
+#email{
+    margin-left: 25px;
+}
+#pass ,#email{
+    width: 200px;
+    height: 35px;
+    border-radius: 15px;
+    border: 0px;
+   
+}
+#pass:focus{
+    background-color: rgb(224, 220, 220);
+}
+
+#email:focus{
+    background-color: rgb(224, 220, 220);
+}
+label{
+    margin-right: 10px;
+    color: rgb(122, 115, 115);
+}
+
+.btn{
+    color: white;
+   background-color: rgb(91, 142, 238);
+    border-radius: 15px;
+    width: 200px;
+    height: 45px;
+    border: 0px;
+    background: linear-gradient(to bottom right , rgb(23, 23, 24) ,rgb(26, 28, 29));
+   box-shadow:  0px 7px 10px  rgb(132, 146, 187);
+   
+}
+.btn:hover{
+
+
+}
+.div-btn{
+    margin-top: 20px;
+    
+  margin-left: 70px;
+  
+    height: 45px;
+    width: 400px;
+    
+}

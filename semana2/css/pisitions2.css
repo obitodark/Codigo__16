@@ -1,0 +1,56 @@
+body{
+
+    font-family: 'Roboto', sans-serif;
+   
+    
+}
+ul li  {
+    list-style: none;
+    display: inline;
+   
+    padding: 20px;
+    
+}
+nav{
+    background-color: rgb(53, 47, 47);
+    height: 45px;
+    border-radius: 10px;
+   
+}
+a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    line-height: 45px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+a:hover{
+ display: inline-block;
+    color: rgb(24, 22, 22);
+    background-color: white;
+    border-radius: 10px;
+    line-height: 38px;
+    height: 38px;
+ 
+   
+    
+
+}
+
+header{
+    position: fixed;
+    width: 100vh;
+    z-index: 1;
+}
+
+div{
+    position: relative;
+    top: 100px;
+}
+
+#nosotros{
+
+    height: 100vh;
+    background-color: beige;
+}

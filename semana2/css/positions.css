@@ -1,0 +1,84 @@
+/*
+
+posiciones son cutro
+relative
+absolute
+fixed
+sticky
+*/
+
+.bg-box{
+
+    height: 400px;
+    width: 400px;
+    background-color: brown;
+    position: relative;
+    /*
+    al agregar un posion a un elmento es nos da la opcin de user los
+    !top
+    !right
+    !left
+    !botton
+    */
+
+   
+   /* left: 100px;*/
+    right: 100px;
+    /* esta opcion de combinar absoluto y relative
+    absulute nesecita un padre  que defina su entorno alto ancho
+    */
+}
+.padre{
+
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+    position: relative;
+    text-align: center;
+}
+.hijo{
+    background-color: black;
+width: 100px;
+height: 100px;
+position: absolute;
+top: calc(50% - 50px);
+left: calc(50% - 50px);
+
+}
+.bandera{
+border: 5px solid  black;
+    height: 100vh;
+    position: relative;
+   
+  display: flex;
+   
+}
+.green{
+    
+    background-color: green;
+    height: 100vh;
+    width: 30%;
+    /* float: left; */
+  
+}
+.red{
+    background-color: red;
+    height: 100vh;
+    width: 70%;
+    
+    /* float:right; */
+    
+    
+}
+.escudo{
+  position: absolute;
+    top: 100px;
+    width: 300px;
+    height: 300px;
+    left: calc(30% - 150px);
+    top: calc(50% - 150px);
+background: url("../image/pngwing.com\ \(1\).png");
+background-size: cover;
+background-repeat: no-repeat;
+
+}

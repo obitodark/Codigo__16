@@ -1,0 +1,92 @@
+body{
+
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(41, 40, 40);
+    color: rgb(216, 217, 218);
+}
+h1{
+    text-align: center;
+    font-weight: 500;
+}
+.container{
+
+}
+.box{
+
+    width: 250px;
+    height: 250px;
+    /* background-color: rgb(241, 208, 115); */
+    /* background: linear-gradient(145deg,  rgb(85, 81, 71),  rgb(241, 208, 115)); */
+   
+    margin: auto;
+    border-radius: 74px;
+    display: inline-block;
+    margin: 50px;
+    
+}
+.shadow{
+
+/*
+1 parametro  eje x (default derecha)
+2 parametro  eje x (default abajo)
+3 parametro  blur (difuminacion)
+4 parametro spred (propagacion)
+5 parametro color
+*/
+
+
+background: linear-gradient(to bottom right , rgb(190, 45, 118) ,rgb(241, 208, 115));
+   box-shadow:  33px 33px 66px  rgb(0, 0, 0),
+   -33px -33px 66px rgb(49, 48, 48);
+}
+h2{
+    color: white;
+    margin-top: 55px;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 12px 8px 5px black;
+    font-weight: 500;
+}
+.shadow1{
+    box-shadow:  33px 33px 66px  rgb(0, 0, 0),
+    -33px -33px 66px rgb(49, 48, 48);
+    background: linear-gradient(to  right , rgb(28, 77, 236) 30% ,rgb(86, 38, 165) 60% ,rgb(158, 13, 44) 100% );
+   
+    transition: 5s ;
+}
+.shadow1:hover{
+
+background: linear-gradient(to bottom right , rgb(190, 45, 118) ,rgb(241, 208, 115));
+
+}
+.shadow2{
+    width: 500px;
+    box-shadow:  33px 33px 66px  rgb(0, 0, 0),
+    -33px -33px 66px rgb(49, 48, 48);
+    background: linear-gradient(to  right , #9e0d2c  35% ,rgb(247, 246, 248) 35% ,rgb(247, 246, 248) 70%,#9e0d2c 70% );
+
+}
+.shadow3{
+background-color: white;
+border-radius: 125px;
+background: radial-gradient(#9e0d2c  35% ,rgb(247, 246, 248) 35% ,rgb(247, 246, 248) 50%,#9e0d2c 50% );
+ /* filter: blur(10px) grayscale(30%); */
+ filter: hue-rotate(180deg);
+}
+.shadow4{
+    background-color: white;
+    width: 400px;
+    position: relative;
+}
+.shadow4::after{
+    border-radius: 75px;
+ position: absolute;
+ top: 0px;
+ left: 0px;
+ content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to  right , rgb(28, 77, 236) 30% ,rgb(86, 38, 165) 60% ,rgb(158, 13, 44) 100% );
+    filter: blur(20px);
+  z-index: -1;
+}

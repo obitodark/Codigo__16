@@ -1,0 +1,36 @@
+body{
+
+    font-family: 'Roboto', sans-serif;
+}
+p{
+font-size: 1em;
+}
+h1{
+
+    font-size: 2em;
+}
+.bg{
+    border: 2px solid cornflowerblue;
+    height: 250px;
+}
+.color-red{
+ background-color: red;   
+}
+.color-green{
+
+    background-color: green;
+}
+.bg-img{
+    background: url("../../semana1/images/SAITAMA.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.bg-img-articulo{
+    color: rgb(35, 135, 223);
+
+    background: url("../image/tarjeta-gráfica-2.jpg");
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
