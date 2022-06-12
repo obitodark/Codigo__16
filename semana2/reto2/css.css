@@ -82,7 +82,8 @@ span{
   
     width: 280px;
     height: 40px;
-   
+    border: 1px solid chartreuse;
+    
 }
 
 .text1{
@@ -100,7 +101,7 @@ span{
     display: inline-block;
     margin-top: -100px;
   
-  
+  border: 1px solid chartreuse;
   
     line-height: 50px;    
     
