@@ -1,0 +1,19 @@
+body{
+    background-color: #141C2F;
+    color: white;
+}
+
+
+table{
+    border: 1px solid chartreuse;
+    width: 50%;
+    background-color: #1F2A48;
+}
+td{
+    border: 1px solid crimson;
+}
+
+input[type="text"]{
+    height: 30px;
+    width: 100%;
+}

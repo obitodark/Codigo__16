@@ -1,0 +1,93 @@
+body{
+   background-color:#1c253f ;
+   color: white;
+   font-family: 'Fredoka', sans-serif;
+}
+h1{
+    font-size: 20px;
+}
+.container{
+ 
+  
+   /* border: solid 5px chartreuse; */
+   width: 40%;
+   margin-left: 25%;
+   top: 50%;
+   transform: translateY(50% );
+}
+table{
+ width: 100%;
+   
+    border-radius: 10px;
+
+}
+td{
+    /* border: 1px solid chartreuse; */
+   
+}
+.container{
+
+    /* border: solid 2px chartreuse; */
+}
+input[type="text"]{
+
+    height: 30px;
+    width: 98%;
+    border-radius: 5px;
+    font-size: 16px;
+    padding-left: 10px;
+    border: none;
+}
+
+input[type="submit"]{
+  background-color: #0d6efd;
+    height: 35px;
+    width: 100%;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    
+}
+.formulario{
+    
+    padding-bottom: 20px;
+    height: 60px;
+}
+span{
+    display:block;
+}
+.name{
+    width: 80px;
+}
+.avatar{
+ text-align: center;
+    width: 200px;
+}
+.box{
+    margin: 10px;
+    border: 2px solid crimson;
+   
+  
+ 
+   height: 100px;
+}
+.box td{
+    /* border: solid 1px crimson;
+    border-radius: 10px; */
+}
+ .tabla2{
+    background-color: #22326b;
+ }
+ td{
+    /* border: solid 1px chartreuse; */
+ }
+ .foll{
+    width: 160px;
+ }
+.name{
+   
+}
+.vacio{
+
+    height: 50px;
+}
