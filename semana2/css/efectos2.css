@@ -1,0 +1,49 @@
+
+.container{
+padding: 20px;
+margin: 100% auto;
+background-color: blanchedalmond;
+}
+.btn{
+    
+ display: inline-block;
+ width: 200px;
+ background-color: rgb(46, 44, 44);
+ font-size: 20px;
+ color: white;
+ height: 50px;
+ margin: 10px;
+ line-height: 35px;
+ cursor: pointer;
+ text-transform: uppercase;
+ border-radius: 20px;
+ border: 0px;
+ transition: .3s ease all;
+overflow: hidden;
+}
+.btn{
+   position: relative; 
+}
+.btn.btn1::after {
+ 
+    position: absolute;
+    left: 0px;
+    top: -50px;
+	content: "";
+	width: 100%;
+	height: 100%;
+    background: linear-gradient(to  right , rgb(28, 77, 236) 30% ,rgb(86, 38, 165) 60% ,rgb(158, 13, 44) 100% );
+    transition: .3s ease-in-out all;
+
+}
+.btn span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+.btn.btn1:hover::after{ 
+   
+    top: 0px;
+}
+   
+    

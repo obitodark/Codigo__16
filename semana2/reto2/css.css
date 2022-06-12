@@ -1,0 +1,107 @@
+body{
+
+    font-family: 'Outfit', sans-serif;
+    background: hsl(217, 54%, 11%);  
+    
+}
+.container{
+height: 100vh;
+color: white;
+/* position: relative; */
+}
+.box{
+    /* position: absolute; */
+    background-color:  hsl(216, 50%, 16%);
+    width: 300px;
+    position: relative;
+border-radius: 15px;
+transform:translateY(50%);
+margin: auto;
+box-shadow:  19px 19px 5px #0C1729,
+             -19px -19px 0px #0C192C;
+
+             height: 540px;
+}
+.cubo{
+   margin-left: 6%;
+    width:260px;
+    border-radius: 10px;
+    margin-top: 20px;
+    
+}
+.color{
+   color: hsl(215, 32%, 57%);
+}
+.box *{
+    margin-left:  6%;
+    margin-right: 6%;
+
+}
+.img{
+    padding: 0;
+    margin: 0;
+}
+.cubo:hover{
+   
+    background: linear-gradient( rgba(138, 213, 216, 0.50),
+    rgba(138, 213, 216, 0.50)),url(./images/image-equilibrium.jpg);
+    background-size: cover;
+ 
+}
+.eth{
+    color: hsl(178, 100%, 50%);
+    padding-right: 30px;
+}
+.subbox{
+
+    font-size: 15px;
+    
+    border-style: none none solid none;
+    border-width: 1px;
+    border-color: hsl(214, 42%, 25%);
+    padding-bottom: 15px;
+}
+.avatar{
+    width: 30px;
+    border-radius: 25px;
+    
+    border: 1px solid white;
+    margin: 0;
+    margin-top: 20px;
+}
+.day{
+   
+}
+span{
+    margin: 0;
+}
+.footer{
+    
+    
+    font-size: 10px;
+  
+    width: 280px;
+    height: 40px;
+   
+}
+
+.text1{
+    
+   
+  margin-top: -20px;
+  
+    display: inline-block;
+    
+    line-height: 50px;
+ 
+}
+.text2{
+    margin-left: -18px;
+    display: inline-block;
+    margin-top: -100px;
+  
+  
+  
+    line-height: 50px;    
+    
+}
