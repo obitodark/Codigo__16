@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    
+}
+.container div:first-child{
+    /* border: 1px solid chartreuse; */
+    margin-left: 20px;
+    color: rgb(155, 63, 63);
+}
+.container div:last-child{
+    margin-right: 20px;
+}
+.container{
+    /* border: 2px solid chartreuse; */
+    display: flex;
+    justify-content: space-between;
+   margin: 5px 50px;
+    border: 1px rgb(206, 203, 201) solid;
+    border-width: 0px 0px 1px 0px;
+
+}
+.container .list>li{
+    /* border: 2px salmon solid; */
+   
+    
+    list-style: none;
+    align-self: center;
+    padding: 10px;
+    color: black;
+    
+   
+}
+.list{
+    /* border:  2px slateblue solid; */
+    display: flex;
+}
+.container .list>li a{
+    text-decoration: none;
+    color: black;
+}
+.container div:first-child{
+    /* border: solid; */
+    display: flex;
+    align-items: center;
+}
+.lista{
+    position: absolute;
+    background-color: rgb(54, 51, 51);
+    color: white;
+   display: none;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgb(177, 179, 180) ;
+    z-index: 1;
+}
+.lista li{ 
+   text-align: center;
+   display: block;
+    /* border: 1px solid crimson; */
+    margin: 5px;
+    padding: 6px;
+    list-style: none;
+    margin-left: 0;
+}
+.dropdown:hover .lista {
+
+display: block;
+transition: .3s all ease;
+}
+.lista li:hover{
+    border-radius: 5px;
+    background-color: aquamarine;
+    transition: .3s all ease-in;
+    color: black;
+ }
