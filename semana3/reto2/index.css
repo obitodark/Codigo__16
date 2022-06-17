@@ -187,7 +187,9 @@ padding: 0;
   }
 
   @media only screen and (max-width: 800px) {
-   
+    body{
+      background-color: rgb(59, 35, 78);
+    }
     .small-child{
       width: 35%;
     }
@@ -201,6 +203,9 @@ padding: 0;
   }
 
   @media only screen and (max-width: 580px) {
+    body{
+      background-color: yellowgreen;
+    }
     
     .small-child{
       width: 100%;

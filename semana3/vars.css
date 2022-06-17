@@ -1,0 +1,12 @@
+:root{
+
+    --colorPrimary:rgb(198, 200, 204);
+    --colorWarning:rgb(235, 213, 93);
+    --colorDanger:rgb(240, 82, 82);
+    --colorSuccess:rgb(93, 230, 93);
+    
+
+    --coloDegradado: linear-gradient(205deg, #79726e 0, #505c63 25%, #1f4459 50%, #002d4f 75%, #001a47 100%);
+    
+}
+

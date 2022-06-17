@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica;
+
+}
+body{
+    background-color: #e0e0e0;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  box-shadow: 0 1px 8px #666;
+  background-color: #fdfcfc;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 0 20px;
+}
+
+header a {
+  text-decoration: none;
+  color: rgb(36, 34, 34);
+  transition: all 0.3s;
+  letter-spacing: 0.05rem;
+}
+
+header a:hover {
+  color: #b2dfdb;
+  transition: all 0.5s;
+}
+
+/* DROPDOWN: Menu desplegable */
+.dropdown {
+  display: block;
+}
+
+/* El menú escondido */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  margin-left: -10%;
+}
+
+/* Cada elemento del menú escondido */
+.dropdown-content li {
+  display: block;
+  padding: 20px 10px;
+}
+
+/* Las anclas que estén dentro de cada elemento del menú escondido */
+.dropdown-content li a {
+  text-decoration: none;
+  color: #666;
+}
+.dropdown-content li a:hover {
+
+  color: #333;
+}
+
+/* 
+    Cuando el cursor está por encima de dropdown (padre) 
+    Aplicar solo a dropdown-content (menu) los estilos:
+*/
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* 
+    Cuando el cursor está por encima de dropdown (padre) 
+    Aplicar solo a dropdown-button (botón) los estilos:
+*/
+.dropdown:hover .dropdown-button {
+  text-decoration: underline;
+}
+
+.container{
+
+
+ padding: 0;
+ 
+  width: 300px;
+  margin: 20px 0;
+}
+
+.tabla div:last-child{
+margin: 0;
+border-radius:0 0 20px 20px;
+}
+.tabla{
+ 
+    width: 100%;
+    padding: 0%;
+    margin: 0;
+    border-radius: 20px;
+
+ box-shadow: 7px 7px 7px rgb(160, 160, 160);
+
+    
+}
+.tabla::after{
+    width: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   filter: blur(5px);
+  
+
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  
+  
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+   
+   
+    
+    padding: 10px;
+   
+    margin: 0px;
+    
+}
+.row-th{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+   
+    border-width: 1px;
+    border-style: solid none solid none;
+    padding: 10px;
+    border-radius:20px 20px 0 0;
+    margin: 0;
+}
+.container h2{
+    text-align: center;
+    padding-bottom: 30px;
+
+
+}
+.row:hover{
+background: rgb(232, 235, 241);
+    color: rgb(7, 7, 7);
+    font-weight: 550;
+}
+.th{
+   background: var(
+   --coloDegradado);
+    color: rgb(212, 213, 224);
+    padding: 15px;
+
+}
+.td{
+    color: rgb(139, 135, 135);
+}
+.row:nth-child(even){
+
+    background: var(--colorPrimary);
+}
+
+
+.row > div{
+   border-color: 1px #666;
+    width: 25%;
+   
+    text-align: center;
+}
+@media only screen and (max-width: 992px) {
+    #page{
+        display: flex;
+    }
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100vh;
+    width: 15%;
+    padding: 20px;
+    box-shadow: 0 1px 8px #666;
+    background: rgb(31, 30, 30);
+   
+   
+  }
+  header a{
+    color: rgb(204, 204, 207);
+  }
+  header a:hover{
+    color: rgb(216, 203, 24);
+    text-decoration: none;
+    padding-bottom: 5px;
+    /* border-style: none none none solid; */
+    padding: 5px;
+
+  }
+  h1{
+    color: rgb(204, 204, 207);
+    background: #050505;
+    border-radius: 7px;
+    width: 120px;
+    text-align: center;
+    margin-left: -10px;
+    padding: 7px;
+    font-size: 20px;
+  }
+
+  header:hover {
+    width: 20%;
+    padding: 20px 50px;
+    transition: all 1s;
+  }
+
+  header ul {
+    margin-top: 20px;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .dropdown-content {
+    margin-top: 0px;
+    margin-left: 40px;
+
+  }
+
+  main{
+    width: 100%;
+  }
+  .container{
+
+    width: 300px;
+  }
+}
+
