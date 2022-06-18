@@ -1,0 +1,443 @@
+/* paso 1 quitamos margenes a todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  :root {
+    /* Cuando hablamos de colores en un proyecto tenemos 3 nombres como base */
+    /* primary-color: Es el color principal de la web */
+    /* secondary-color */
+    /* dark-color: */
+    /* accent-color: #333 */
+  
+    /* let nombreDePersona = "Juan Peres" */
+    /* let name = "Juan Perez" */
+  
+    /* !Una regla del nombre de una variable es que esta nos diga el contenido*/
+  
+    /* Colors */
+    --sunglow-color: #fecb01;
+    --orange-color: #ff4d00;
+    /* Si queremos cambiar el valor de un variable por complete hacemos un refactor */
+    --white-color: #f3fcfa;
+    --brown-sugar-color: #b26244;
+    --polished-color: #63a496;
+    --capri-color: #3ebdfc;
+    --gray-color: #bab8ad;
+    /* Fonts */
+    /* ojo: Recuerden que las variables solo guardan un valor */
+    --font-fraunces: "Fraunces", sans-serif;
+    --font-barlow: "Barlow", sans-serif;
+  }
+  
+  header {
+    background-color: var(--capri-color);
+  }
+  
+  nav {
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center; */
+    padding: 20px;
+  }
+  
+  ul {
+    display: flex;
+    list-style: none;
+  }
+  ul > li {
+    margin: 20px;
+  }
+  
+  /* Nota cuando un elemento es un hijo directo como buena practica usamos el sibolo > */
+  ul > li a {
+    font-family: var(--font-barlow);
+    text-decoration: none;
+    color: var(--white-color);
+  }
+  
+  .contact {
+    font-family: var(--font-fraunces);
+    background-color: var(--white-color);
+    color: #000;
+    padding: 15px;
+    border-radius: 25px;
+  }
+  
+  .bg-orange {
+    height: 60vh;
+    background-image: url("./images/desktop/image-header.jpg");
+    background-color: var(--capri-color);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .title {
+    color: var(--white-color);
+    font-family: var(--font-fraunces);
+    font-size: 4em;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+  }
+  
+  .second-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .second-container div {
+    height: 60vh;
+    width: 50%;
+  }
+  
+  .bg-egg {
+    background: url("./images/desktop/image-transform.jpg");
+  }
+  
+  .bg-cup {
+    background: url("./images/desktop/image-stand-out.jpg");
+  }
+  
+  .bg-cherry {
+    background: url("./images/desktop/image-graphic-design.jpg");
+  }
+  
+  .bg-orange-complete {
+    background: url("./images/desktop/image-photography.jpg");
+  }
+  
+  .child {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+  }
+  section h4 {
+    font-family: var(--font-fraunces);
+    font-size: 2.5em;
+    margin-bottom: 30px;
+  }
+  
+  section p {
+    font-family: var(--font-barlow);
+    font-weight: 600;
+    color: var(--gray-color);
+    margin-bottom: 30px;
+  }
+  
+  section a {
+    font-family: var(--font-fraunces);
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: transparent;
+  }
+  
+  section a:hover {
+    box-shadow: 0 4px 6px -6px var(--sunglow-color);
+    width: 115px;
+  }
+  
+  .bottom {
+    justify-content: end;
+  }
+  
+  .bottom h4 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  
+  .bottom p {
+    color: #000;
+  }
+  .testimonio{
+    display: flex;
+    justify-content: center;
+    
+    text-align: center;
+    align-items:center ;
+    padding: 20px;
+    height: 60vh;
+   
+  
+  }
+  .title2{
+    text-transform: uppercase;
+    color: var(--gray-color);
+ font-family: var(--font-fraunces);
+ letter-spacing: 4px;
+    text-align: center;
+    margin: 80px 0px;
+  }
+  .test{
+    width: 25%;
+    margin: 20px;
+    align-self: center;
+  }
+  .test img{
+
+    width: 100px;
+    border-radius: 50%;
+  }
+  .test p{
+    color: rgb(78, 77, 77);
+
+    font-family: var(--font-barlow);
+    margin: 60px 0px;
+  }
+  .test h3{
+  padding: 5px;
+    color: var(--gray-color);
+    font-family: var(--font-barlow);
+  
+  }
+
+  .imagen{
+    background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   
+    height: 40vh;
+    width: 25%;
+  }
+  .container-4{
+
+    height: 40vh;
+   width: 100%;
+    display: flex;
+  }
+  .imagen img{
+    width: 100%;
+    border:  2px solid crimson;
+}
+  .img-1{
+    background-image: url("./images/desktop/image-gallery-milkbottles.jpg");
+  
+  } 
+
+  .img-2{
+    background-image: url("./images/desktop/image-gallery-orange.jpg");
+    
+  } 
+
+  .img-3{
+    background-image: url("./images/desktop/image-gallery-cone.jpg");
+    
+  }
+
+  .img-4{
+    background-image: url("./images/desktop/image-gallery-sugarcubes.jpg");
+    
+  }
+
+
+
+
+
+
+ 
+.container-5{
+    background: #90D4C5;
+    height: 40vh;
+    color: #2C7566;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(--font-barlow);
+}
+  footer h2{
+    text-align: center;
+ 
+    padding: 20px;
+    font-weight: 600;
+    font-size: 35px;
+
+  }
+
+
+
+  footer div:nth-child(even) {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+    
+   
+    
+
+    /* border: 1px solid rgb(41, 24, 116); */
+  }
+
+  footer div:nth-child(even) a{
+   
+    text-decoration: none;
+    color: inherit;
+    padding: 0px 30px;
+    text-align: center;
+
+    
+ 
+
+ 
+  }
+  footer div:last-child{
+    /* border: 2px solid chartreuse; */
+    text-align: center;
+  }
+
+  footer div:last-child img{
+    width: 30px;
+    margin: 20px;
+    
+
+
+  } 
+
+header{
+  /* border: 2px coral solid; */
+}
+
+.nav-bar{
+  width: 100%;
+  /* border: 2px chartreuse solid; */
+  display: flex;
+  justify-content:end;
+}
+  .checkbtn{
+    font-size:30px ;
+    color: white;
+    float: right;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    /* border: solid 2px crimson; */
+    width: 30px;
+    height: 20px;
+    display: none;
+    cursor: pointer;
+  }
+  .logo{
+    position: absolute;
+    left: 30px;
+    top: 30px;
+  }
+  
+.nav-bar > div:last-child{
+    /* border: #2C7566 solid 2px; */
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  
+  }
+#check{
+  float: right;
+  display: none;
+
+}
+
+.bar{
+ 
+ 
+}
+  @media only screen and (max-width: 1000px) {
+
+    .bg-orange{
+        background-size: cover;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .second-container{
+        flex-direction: row row-reverse;
+      flex-direction: column ;
+    }
+    .bg-orange{
+        background-size: cover;
+    }
+    .second-container div {
+        height: 60vh;
+        width: 100%;
+      }
+      section{
+        width: 70%;
+        text-align: center;
+        line-height: 2;
+      }
+      .bg-egg{
+        order: -1;
+      }
+      footer div:last-child img{
+        padding: 0;
+        
+    
+    
+      } 
+      .test{
+        width: 60%;
+        line-height: 2;
+        margin-bottom: 50PX;
+      }
+      .testimonio{
+
+        flex-direction: column;
+        height: 150vh;
+      }
+      .container-4{
+        flex-wrap: wrap;
+        height: 70vh;
+       
+      }
+      .imagen{
+        width: 50%;
+        height: 35VH;}
+
+        .checkbtn{
+          
+          display:block;
+        }
+        #menu{
+          position: fixed;
+          padding-top: 50px;
+          padding-left:20px ;
+          flex-direction: column;
+          left: -100%;
+          background: #2C7566;
+          width: 70%;
+          height: 100vh;
+          justify-content: start;
+          transition: all .5s;
+          
+        }
+        nav{padding: 0;}
+       
+        ul{
+          flex-direction: column;
+        }
+        #check:checked ~ #menu{
+         left: 0;
+         
+        }
+        .checkbtn{
+          display: block;
+        }
+
+  }
