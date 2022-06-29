@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Nunito", sans-serif;
+    background-color: #e0e0e0;
+  }
+  
+  h1 {
+    margin: 20px;
+  }
+  
+  .container {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    /* padding: 10px; */
+    border-radius: 8px;
+    /* box-shadow: 5px 2px 15px 5px rgba(196, 196, 196, 0.94); */
+   width: 20%;
+   margin: 20px;
+     background: white;
+box-shadow:  29px 29px 58px #c5c5c5,
+             -29px -29px 58px #fbfbfb;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 20px;
+  }
+  
+  img {
+    padding: 10px;
+    
+    width:200px;
+    height: 200px;
+    object-fit: contain;
+  }
+  .container-img{
+
+    text-align: center;
+  }
+  
+  .container-price {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .price {
+    text-decoration: line-through;
+  }
+  
+  .sale-price {
+    color: #f01;
+  }
+  
+  .btn-buy {
+    border: none;
+    background-color: rgb(94, 132, 238);
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+    width: 95%;
+    margin-top: 20px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .card {
+      width: 30%;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .card {
+      width: 100%;
+    }
+  }

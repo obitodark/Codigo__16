@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Nunito", sans-serif;
+    background-color: #14171C;
+    background: linear-gradient(to right ,#121418,#14171C);
+  }
+  
+  h1 {
+    margin: 20px;
+    color: white;
+  }
+  
+  .container {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+
+    padding: 13px;
+    border-radius: 8px;
+    /* box-shadow: 5px 2px 15px 5px rgba(196, 196, 196, 0.94); */
+   width: 12%;
+   margin: 10px;
+   background-color: #1E2127;
+
+   
+   color: white;
+/* box-shadow:  29px 29px 58px #c5c5c5,
+             -29px -29px 58px #fbfbfb; */
+             /* border:  1px cornsilk solid; */
+  }
+  .name{
+    letter-spacing: 1px;
+    font-size: 1.2em;
+  }
+  .empres{
+    color: #575b64;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .title {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 20px;
+  }
+ 
+  .box-price p{
+    /* display: inline-block;
+    border: 1px coral solid; */
+    padding-right: 10px;
+  }
+  .box-price{
+    display: flex;
+    justify-content: start;
+    /* border: 1px coral solid; */
+    width: 100%;
+  }
+  
+  img {
+    margin: 0;
+    
+    /* border: 1px chartreuse solid; */
+    width: 100%;
+    
+    object-fit: cover;
+  }
+  .container-img{
+
+    text-align: center;
+  }
+  
+  .container-price {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  
+  .price {
+    text-decoration: line-through;
+    font-weight: 900;
+    color: #575b64;
+  }
+  
+  .sale-price {
+    color: #FEDF1E;
+    font-weight: 900;
+  }
+  
+  .btn-buy {
+    border: none;
+    background-color: rgb(223, 206, 56);
+    color: rgb(5, 5, 5);
+    padding: 7px;
+    margin: 10px;
+    width: 95%;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+  @media only screen and (max-width: 1400px) {
+    .card {
+      width: 18%;
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .card {
+      width: 20%;
+    }
+  }
+
+  
+  @media only screen and (max-width: 800px) {
+    .card {
+      width: 30%;
+    }
+
+  @media only screen and (max-width: 600px) {
+    .card {
+      width: 70%;
+    }
+  }
+}

@@ -1,0 +1,127 @@
+button{
+    background-color: rgb(44, 126, 235);
+    width: 200px;
+    height: 40px;
+    border-radius: 7px;
+    border: none;
+    color: white;
+    margin: 10px 0px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px rgb(173, 173, 173);
+}
+
+button:hover{
+    background-color: rgb(118, 176, 252);
+transition: .3s all;
+}
+
+input[type='text']{
+
+height: 35px;
+width: 250px;
+border-radius: 5px;
+border: none;
+background: rgb(240, 240, 240);
+
+}
+ table{
+
+    /* border-radius: 20px; */
+    background-color: white;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 10px 10px 30px rgb(230, 230, 230),
+    -5px -5px 30px  rgb(241, 241, 241);
+   
+ }
+ table tr:nth-child(odd){
+    background: rgb(240, 240, 240);
+ }
+ table th{
+
+    background-color: rgb(44, 43, 43);
+    color: white;
+ }
+
+
+th,td{
+
+    padding: 15px;
+    border-style: none none solid none;
+    border-bottom: 1px rgb(105, 105, 105) solid;
+    color: rgb(78, 77, 77);
+    font-size: 16px;
+}
+input[type='email']{
+
+    height: 35px;
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+    background: rgb(240, 240, 240);
+    
+    
+    }
+.tabla{
+ width: 600px;
+ margin: 20px;
+    /* background-color: aqua; */
+}
+input::placeholder{
+
+    color: rgb(194, 196, 197);
+    padding-left: 10px;
+}
+input[type='text']:focus-within{
+
+
+    border-color: aqua;
+}
+body{
+
+    /* margin-top: 100px;
+    display: flex; */
+    /* display: flex;
+    justify-content: center; */
+    font-family: 'Roboto', sans-serif
+}
+.content{ 
+    margin-top: 50px;
+/* border: 2px solid chartreuse; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background: white;
+  border-radius: 15px;
+   
+   padding: 5px 50px;
+    box-shadow: 10px 10px 30px rgb(230, 230, 230),
+    -5px -5px 30px  rgb(241, 241, 241);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 400px;
+    width: 350px;
+}
+h1{
+    color: rgb(88, 88, 88);
+    margin: 0;
+    padding: 0;
+   
+}
+.form{
+    /* border:  1px solid chartreuse; */
+    padding: 0px 10px ;
+  
+}
+.encabezado{
+    /* border: 1px coral solid; */
+ 
+    padding: 10px;
+}
+.encabezado h1{
+    font-size: 32px;
+}
