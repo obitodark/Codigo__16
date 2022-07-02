@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h2>Settings</h2>
+        <div id="settings"></div> -->
+    <main>
+        <div id="container">
+            <h1>To Do List</h1>
+            <div class="list">
+
+         
+            <p class="form">
+                <input type="text" id="new_task" placeholder="new task ..." >
+                <input  class="btn_add" type="button" value="Add Task" onclick="addTask()">
+
+            </p>
+
+                <h2>Settings</h2>
+                <div id="settings">
+                    <p class="check">
+                      &nbsp;<input type="checkbox" id="chx_task_done" />&nbsp;Mostrar u
+                      ocultar tareas hechas
+                    </p>
+                    <p class="check">
+                      &nbsp;<input type="checkbox" id="chx_task_delete" />&nbsp;Mostrar u
+                      ocultar tareas eliminadas
+                    </p>
+                    <p class="check">
+                      &nbsp;<input type="checkbox" id="chx_task_todo" />&nbsp;Mostrar u
+                      ocultar tareas pendientes
+                    </p>
+                  </div>
+            </div>
+
+
+        </div>
+
+        <div class="modal">
+            <div class="box_modal">
+                <input id="input_text" type="text" placeholder="Ingrese la tarea">
+                <div>
+                    <button id="btn_aceptar">Aceptar</button>
+                    <button id="btn_cerrar">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+</body>
+<script src="./task.js"></script>
+<script src="./app.js"></script>
+</html>

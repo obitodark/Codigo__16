@@ -1,0 +1,241 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ box-sizing: border-box;
+}
+
+body{
+    background:  #1b2631;
+    /* background: linear-gradient(to right , #3c4855, #1b2631); */
+}
+h1{
+    color: white;
+}
+#container{
+
+    width: 600px;
+    margin: 30px auto;
+}
+.list{
+    /* border: 1px solid #ddd; */
+    border-radius: 20px;
+    padding: 10px;
+    background: #2F3740;
+    
+}
+.editar{
+display: inline-block;
+float: right;
+background: #F1C65B;
+color: rgb(8, 8, 8);
+margin-right:10px ;
+height: 25px;
+width:30px ;
+padding: 10px;
+line-height: 5px;
+border-radius: 5px;
+text-align: center;
+}
+.cerrar{
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 15px;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    background: #be5261;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    cursor: pointer;
+    float: right;
+   margin-right:10px ;
+   /* box-shadow: 2px 2px 5px rgb(115, 119, 129); */
+}
+.cerrar:hover{
+
+    background: #F0D3A9;
+    transition: all ease-in.3s};
+
+   #chx_task_done{
+    background: #8dc722;;
+    border: 1px coral solid;
+
+}
+.task{
+height: 100%;
+
+margin: 10px;
+border-radius: 10px;
+font-size: 1rem;
+cursor: pointer;
+border-radius: 10px;
+
+
+}
+
+.task:hover{
+    border-radius: 5px;
+    border: 1px solid #F1C65B;
+    /* background: rgb(199, 222, 247); */
+}
+input[type="checkbox"]{
+    margin-left: 10px;
+  transform: scale(1.2);
+ 
+ 
+
+}
+.task{
+    /* border: 1px coral solid; */
+ color: rgb(216, 216, 216);
+   padding: 17px 0px;
+    /* margin: 10px 5px; */
+    background: #474C56;
+    margin:15px;
+    border-radius: 5px;
+    font-size: 17px;
+    box-shadow: 5px 5px 5px  #262E36;;
+    
+}
+.done{
+    background-color: cadetblue;
+    color: white;
+    border-radius: 5px;
+    font-style: italic;
+}
+.done> a{
+    display: none;
+   
+}
+.done:hover{
+    border-radius: 5px;
+    background-color: rgb(74, 137, 139);
+    color: white;
+}
+.delete > input{
+    display: none;
+
+}
+.delete {
+
+    background: rgb(116, 65, 65);
+}
+.delete>span{
+    margin-left: 30px;
+    color: rgb(156, 152, 152);
+    text-decoration: line-through solid rgb(237, 100, 196) ;
+    font-style: italic;
+}
+.form{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+h2{
+color: white;
+padding-left: 10px;
+
+}
+
+.form input[type="text"]{
+
+    border-radius: 5px;
+    width: 75%;
+    border: none;
+    height: 37px;
+    outline: none;
+    background: rgb(232, 233, 233);
+    font-size: 1rem;
+    padding-left: 10px;
+}
+.form input[type="text"]::placeholder{
+
+    padding-left: 10px;
+}
+.btn_add{
+    width: 24%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background:  rgb(44, 126, 129);
+    color: rgb(212, 203, 203);
+}
+
+.btn_add:hover{
+
+    background:   rgb(110, 147, 148);;
+    color: white;
+}
+
+#settings {
+    /* border: 1px solid #ddd; */
+    border-radius: 10px;
+    background-color: #1b2331;
+    padding: 10px;
+    color: rgb(170, 167, 167);
+}
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+  pointer-events: none;
+  display: flex;
+    justify-content: center;
+}
+.box_modal{
+    margin-top: 200px;
+ background: #374052;
+ width: 400px;
+ height: 200px;
+ border-radius: 10px;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-evenly;
+ align-items: center;
+    
+ 
+}
+
+.modal_show{
+
+opacity: 1;
+pointer-events: unset;
+
+}
+.box_modal input{
+
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+}
+
+.box_modal div button{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+.box_modal div {
+    /* border: 1px chartreuse solid; */
+    padding: 20px;
+    width: 100%;
+ display: flex;
+ justify-content: space-around;
+ 
+}
+.box_modal div button:first-child{
+
+    background: rgb(44, 126, 129);;
+    color: white;
+}
+
+.box_modal div button:last-child{
+    background: #F1C65B;
+
+}
