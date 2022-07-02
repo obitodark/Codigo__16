@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css ">
+    <title>Document</title>
+</head>
+<body>
+  <main>
+    <div class="container">
+        <div class="boxes">
+          <div class="box1">
+             <span>Bill</span>
+             <div class="ipt">
+                <img  class="ico" src="./images/icon-dollar.svg" alt="">
+                <input id="number_bill" class="input" type="text"  placeholder="Number ..-" name="" id="">
+             
+             </div>
+             <span>Select Tip %</span>
+             <div class="box_btn">
+                <button class="btn">5%</button>
+                <button class="btn">10%</button>
+                <button class="btn">15%</button>
+                <button class="btn">25%</button>
+                <button class="btn">50%</button>
+                <button class="btn">Custom</button>
+
+
+             </div>
+             <span>Number of People</span>
+             <div class="ipt">
+                <img  class="ico" src="./images/icon-person.svg" alt="">
+                <input class="input" id="number_people" type="text" placeholder="Number...">
+             </div>
+             
+          </div>
+          <div class="box2">
+            <div >
+
+                <div class="box">
+                    <div>
+                        <span class="text_label">Tip Amount</span>
+                        <span >/person</span>
+                    </div >
+                    <div class="ipt">
+                        <span class="text_label">Totak</span>
+                        <span>/person</span>
+                    </div>
+                </div>
+
+
+                <div class="box" >
+                    <h1 id="monto">$0.00</h1>
+                    <h1 id="total">$0.00</h1>
+                </div>
+
+            </div>
+
+
+            <button class="reset">Reset</button>
+          </div>
+
+        </div>
+
+
+    </div>
+  </main>  
+</body>
+<script src="./script.js"></script>
+</html>
