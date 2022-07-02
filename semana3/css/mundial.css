@@ -95,8 +95,9 @@ header a:hover {
 
  padding: 0;
  
-  width: 300px;
+  width: 500px;
   margin: 20px 0;
+  /* border: 1px black solid; */
 }
 
 .tabla div:last-child{
@@ -248,7 +249,11 @@ background: rgb(232, 235, 241);
   }
   .container{
 
-    width: 300px;
+    width: 600px;
+    
+  }
+  .td{
+    text-align: center;
   }
 }
 
