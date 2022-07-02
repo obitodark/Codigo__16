@@ -449,11 +449,12 @@ padding: 0;
 .logos-img{
   width: 760px;
   height: 150px;
-  /* border:  2px coral solid; */
+  border:  2px coral solid;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
+  margin: 100px 0px;
 }
 .logos-img div{
   width: 80px;
@@ -488,17 +489,60 @@ padding: 0;
   width: 100%;
   height: 515px;
   display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: end;
+
 }
 .summer h1 {
-  font-size:56px;
+  font-size:51px;
   color: white;
   padding-left: 20px;
+  font-family:'Euclid Circular' ;
+  font-weight: 600;
+  border:  1px coral solid;
+  display: flex;
 
 }
 
-.summer h1:last-child {
+.summer-title h1:first-child {
 
   font-size:56px;
   color: rgb(207, 114, 114);
+  /* border: solid coral 2px; */
 
+}
+.summer-title{
+  display: flex;
+}
+.fecha{
+  display: flex;
+}
+.fecha div{
+  color: white;
+  font-size: 24px;
+  padding: 0 20px;
+  font-family:'Euclid Circular' ;
+  margin: 0;
+}
+.fecha div h3{
+ font-family: 'abel';
+  font-size: 12px;
+}
+.summer a{
+  text-decoration: none;
+  font-size: 16px;
+  font-family:'Euclid Circular' ;
+  color:  #EB5757;
+  width: 163px;
+  
+  padding: 10px;
+  background: white;
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+
+}
+.fecha div h2,h3{
+  margin: 0;
 }
