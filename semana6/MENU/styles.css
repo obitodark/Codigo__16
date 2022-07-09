@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+    --body_color: #1E1E20;
+    --bodyMenu_color:#212121;
+    --primaru_Color:#6B69FB;
+    --text_color:#e0e0e0;
+    --text_color2:#b9b4b4;
+    --input_Color:#464242;
+    --color_hover_primary:#333030; 
+    /* */
+    --color_list_secundary:rgb(26, 26, 26);
+    --font_family_primary: 'Poppins', sans-serif;
+    --font_size_secundary:14px;
+    --trasn_02: all .2s ease;
+    --trasn_03: all .3s ease;
+    --trasn_04: all .4s ease;
+    --trasn_05: all .5s ease;
+
+}
+
+body{
+  
+    box-sizing: border-box;
+    background: var(--body_color);
+    font-family: var(--font_family_primary);
+    color: var(--text_color);
+   
+  height: 100%;
+  transition: var(--trasn_04);
+    /* border: 5px rgb(46, 18, 124) solid; */
+}
+.dark{
+    --body_color: #e4e4eb;
+    --bodyMenu_color:#fffbfb;
+    --primaru_Color:#6B69FB;
+    --text_color:#fcf6f6;
+    --text_color2:#202020;
+    --input_Color:#f1e7e7;
+    --color_list_secundary:rgb(221, 221, 221);
+    --color_hover_primary:#8b8181; 
+}
+header{
+   
+}
+#container_nav{
+display: block;
+ /* border: 1px coral solid; */
+ width: 250px;
+ height: 100vh;
+ background: var(--bodyMenu_color);
+ overflow: scroll;
+ 
+}
+
+/*reduce el meni*/
+
+.menu_mod{
+    width: 70px;
+    border: 1px coral solid;
+
+}
+/**scroll **************/
+#container_nav::-webkit-scrollbar{
+    width: 10px;
+    position: relative;
+    left: 0;
+}
+#container_nav::-webkit-scrollbar-thumb{
+    background-color: rgb(63, 62, 62);
+    border-radius: 5px;
+}
+
+/* -----------------logo-------------- */
+#container_nav_top #logo{
+    position: fixed;
+    /* border: 1px rgb(70, 47, 201) solid; */
+    background: rgb(20, 20, 20);
+    padding: 20px 30px;
+   left: 0;
+   top: 0;
+ 
+    width: 100%;
+    box-shadow: 5px 5px 5px rgb(27, 27, 29);
+    display: flex;
+    z-index: 2;
+}
+#container_nav_top >#logo >p>img{
+    width: 50px;
+    height: 50px;
+}
+#container_nav_top >#logo>p span {
+    display: block;
+    padding:0px 15px;
+}
+/* -----------------Usuarios-------------- */
+#container_nav_top >#user {
+   /* border: 1px crimson solid; */
+   margin-top: 105px ;
+   margin-left: 10px;
+   margin-bottom: 20px;
+    display: flex;
+    font-size: var(--font_size_secundary);
+    padding: 10px;
+    
+}
+#container_nav_top >#user p>span{
+    display: block;
+    padding: 0px 10px;
+}
+#container_nav_top >#user p>span:last-child{
+    color: var(--text_color2);
+}
+#container_nav_top >#user >img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px var(--primaru_Color ) solid;
+}
+/* -----------------search_nav-------------- */
+#container_nav_top #search{
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+    /* border: 1px coral solid; */
+}
+#container_nav_top #search>input{
+
+    background: rgb(50, 51, 51);
+    height: 35px;
+    width: 90%;
+    border-radius: 8px;
+    border: none;
+    text-align: right;
+    padding: 0px 10px;
+    outline: none;
+    color: var(--text_color2);
+
+}
+#container_nav_top #search >a{
+    position: absolute;
+    font-size: 23px;
+    color: var(--text_color2);
+    top: 5px;
+    left: 24px;
+  
+}
+#container_nav_top #search >a:hover{
+    color: var(--text_color);
+}
+
+/* -----------------lista_menu_nav-------------- */
+#box_menu #list_primary{
+    /* border: 1px coral solid; */
+
+    list-style: none;
+  
+}
+#box_menu #list_primary>li{
+ /* border: 1px crimson solid; */
+ width: 245px;
+ position: relative;
+ /* left: -38px; */
+}
+#box_menu #list_primary>.item_primary>a{
+    position: relative;
+    color: var(--text_color2);
+    padding: 0px 20px;
+    text-decoration: none;
+    /* border: 1px cornflowerblue solid; */
+    display: block;
+   width: 200px;
+   border-radius: 7px;
+   height: 45px;
+   line-height: 45px;
+    
+    font-size: var(--font_size_secundary);
+    border: none;
+    margin: 10px auto;
+}
+#box_menu #list_primary>.item_primary .img_list{
+ /* border:  1px cadetblue solid; */
+ /* margin-right: 20px; */
+}
+
+
+
+#box_menu #list_primary>.item_primary>a:hover{
+
+    background-color: var(--primaru_Color);
+    color: var(--text_color);
+    transition: all .2s ease-in;
+    
+}
+/* lista_secundary ------------------------------------*/
+
+#box_menu #list_primary> .item_primary_list{
+
+ /* border: 1px rgb(212, 13, 13) solid; */
+ overflow: hidden;
+
+
+}
+#box_menu #list_primary> .item_primary_list>a{
+    display: block;
+    color: var(--text_color2);
+    font-size: var(--font_size_secundary);
+ 
+    text-decoration: none;
+    height: 50px;
+    padding: 0px 40px 0px;
+     line-height: 50px;
+    /* border: 1px #6B69FB solid; */
+    width: 100%;
+}
+#box_menu #list_primary> .item_primary_list .img_list{
+    /* border: 1px coral solid; */
+    /* margin-right: 20px; */
+}
+#box_menu #list_primary .item_primary_list>a:hover{
+    background-color: #333030;
+}
+
+
+#box_menu #list_primary .item_primary_list .arrow_off{
+    position: absolute;
+    right: 10px;
+    top: 18px;
+    background: var(--primaru_Color);
+    border-radius: 5px;
+    width: 18px;
+    height: 18px;
+    align-items: center;
+    line-height: 20px;
+    transition: transform .4s;
+    color: white;
+
+}
+/* arrow_list secundary */
+
+.arrow_on{
+
+    transform: rotate(90deg);
+    transition: transform .4s ;
+}
+/*----------------lisst_secundary*/
+#list_primary .item_primary_list .list_secundary{
+
+    /* border: 1px chartreuse solid; */
+   
+    list-style: none;
+    color: var(--text_color2);
+    font-size:var(--font_size_secundary);
+    background: var(--color_list_secundary);
+
+   
+}
+#list_primary .item_primary_list .list_secundary>li{
+    /* border: 1px crimson solid; */
+    position: relative;
+   
+    width: 243px;
+
+}
+#list_primary .item_primary_list .list_secundary>li>a{
+    text-decoration: none;
+    color: var(--text_color2);
+display: block;
+/* border: 1px rgb(38, 0, 255) solid; */
+height: 45px;
+line-height: 45px;
+margin: 7px 0px;
+padding-left: 40px;
+
+}
+#list_primary .item_primary_list .list_secundary>li>a:hover{
+    background: var(--color_hover_primary);
+    transition: all 0.2s ease-in;
+}
+/*  class ocult list secundary*/
+.hide_list{
+    height: 0;
+    transition: height .4s;
+}
+
+/*----------------------*/
+#btn_entrar_menu{
+    background: #6B69FB;
+}

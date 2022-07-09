@@ -1,0 +1,79 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+} 
+
+ input[type="text"]{
+
+    height: 35px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    width: 250px;
+    background: rgb(221, 221, 221);
+    padding-left: 10px;
+}
+
+input[type="email"]{
+
+    height: 35px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    width: 250px;
+    background: rgb(221, 221, 221);
+    padding-left: 10px;
+}
+
+input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+  
+
+
+}
+
+.text-error {
+    color: rgb(216, 12, 12);
+    display: none;
+    background-color: rgb(252, 210, 210);
+    padding: 10px;
+    border-radius: 8px;
+  }
+ #validate_email{
+
+    color: rgb(216, 12, 12);
+    display: none;
+    background-color: rgb(252, 210, 210);
+    padding: 10px;
+    border-radius: 8px; 
+ }
+input[type="password"]{
+
+    height: 35px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    width: 250px;
+    background: rgb(221, 221, 221);
+    padding-left: 10px;
+
+}
+input[type="submit"]{
+
+    height: 35px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    width: 150px;
+    background: rgb(98, 100, 218);
+    color: white;
+    padding-left: 10px;
+}
+.box{
+    margin-top: 50px;
+    /* background: rgb(163, 162, 162); */
+    padding: 30px;
+    border: 1px solid rgb(228, 223, 221);
+border-radius: 20px;}
