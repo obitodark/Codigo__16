@@ -1,0 +1,118 @@
+:root {
+  --background_primary: rgb(214, 37, 75);
+  --trasicion_02: all 0.2s ease-in;
+}
+
+.btnPrimary {
+  color: white;
+  background: var(--background_primary);
+  border: none;
+  border-radius: 10px;
+  padding: 7px 15px;
+  width: 180px;
+}
+.btnPrimary:hover {
+  color: white;
+  background: rgb(247, 160, 179);
+  transition: all 0.3s ease-in;
+}
+
+.boxProduct {
+  background: white;
+  border: 0px white solid;
+  border-radius: 15px;
+}
+.boxProduct:hover {
+  border-radius: 15px;
+  border: 1px rgb(201, 201, 201) solid;
+  transition: all 0.2s ease-in;
+}
+.shadowBox {
+}
+.shadowBox:hover {
+  box-shadow: 5px 5px 7px rgb(199, 196, 196), -4px -4px 7px rgb(224, 224, 224);
+  transition: var(--trasicion_02);
+}
+.imgRound {
+  border-radius: 10px;
+}
+
+/* moalllllllllllllllllll2 */
+.boxModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #111111bd;
+  display: flex;
+  justify-content: center;
+
+  opacity: 1;
+  /* pointer-events: none; */
+  z-index: 2;
+}
+.containerModal {
+  position: relative;
+  margin-top: 200px;
+  background: rgb(24, 23, 23);
+  width: 800px;
+  height: 550px;
+  color: white;
+  border-radius: 15px;
+}
+
+.containerModal > .modal-title {
+  /* border: 1px coral solid; */
+  display: inline;
+  margin-left: 10px;
+}
+.subcontainer {
+  display: flex;
+  /* border: 1px crimson solid; */
+  height: 80%;
+}
+
+.subcontainer > div > img {
+  border-radius: 7px;
+  margin: 20px;
+  width: 350px;
+  border: 1px rgb(224, 223, 223) solid;
+}
+
+.subcontainer > div:last-child {
+  /* border: 1px coral solid; */
+  margin: 10px;
+}
+
+.subcontainer > div:last-child > p {
+  color: rgb(192, 189, 189);
+  margin: 0px 0px;
+}
+.btn-img_carrosuel {
+  width: 50px !important;
+}
+.btn_img {
+  opacity: 1 !important;
+  margin: auto !important;
+}
+.btn_img > img {
+  opacity: 1 !important;
+  width: 55px !important;
+  border-radius: 5px !important;
+  border: 1px black solid !important;
+}
+.btn_img > img:hover {
+  border: 3px rgb(26, 115, 216) solid !important;
+  transition: all border 0.2s ease-in;
+}
+.gaga {
+  /* position: absolute !imarrayProducttant; */
+  /* position: relative; */
+
+  /* border: 1px black solid; */
+}
+/* moalllllllllllllllllll2 */
+
+#article {
+}

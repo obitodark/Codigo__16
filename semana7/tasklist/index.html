@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewarrayProductt"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="sweetalert2.min.css" />
+    <!-- noty -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.css"
+    />
+    <!-- get bootstrap via CDN: -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <title>Todo List</title>
+  </head>
+  <style>
+    body {
+      font-family: Helvetica;
+    }
+
+    .delete {
+      text-decoration: line-through;
+      text-transform: uppercase !imarrayProducttant;
+    }
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo.svg"
+            alt=""
+            width="30"
+            height="24"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSuparrayProducttedContent"
+          aria-controls="navbarSuparrayProducttedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse"
+          id="navbarSuparrayProducttedContent"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript: resetStorage();"
+                >reniciar</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Filtros
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a id="filter_todo" class="dropdown-item" href="?filter=todo"
+                    >TODO</a
+                  >
+                </li>
+                <li>
+                  <a
+                    id="filter_delete"
+                    class="dropdown-item"
+                    href="?filter=delete"
+                    >DELETE</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a id="filter_done" class="dropdown-item" href="?filter=done"
+                    >DONE</a
+                  >
+                </li>
+                <li>
+                  <a id="filter_all" class="dropdown-item" href="?filter=all"
+                    >ALL</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="container">
+        <div class="row mt-5">
+          <div class="mt-5 col-6 border pt-5">
+            <h1>Task List</h1>
+            <form id="form-task" class="row my-3 needs-validation" novalidate>
+              <div class="col-6 col-sm-8 col-md-9 col-lg-10">
+                <input
+                  type="text"
+                  id="input-task"
+                  autocomplete="off"
+                  placeholder="Ingresa el nombre de la tarea"
+                  required
+                  class="form-control"
+                />
+                <div class="invalid-feedback">Escriba una tarea</div>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <button class="btn btn-outline-primary" type="submit">
+                  <i class="fa-solid fa-plus"></i>&nbsp;Add
+                </button>
+              </div>
+            </form>
+            <section id="section-task"></section>
+            <!-- vamos a poner el detalle de la tarea -->
+            <section
+              id="section-detail-task"
+              class="row d-flex justify-content-center"
+            ></section>
+
+            <section id="section-charts" class="row">
+              <!-- <div style="width: 600px">
+                <canvas id="bar-chart" width="100" height="50"> </canvas>
+              </div> -->
+            </section>
+          </div>
+
+          <div class="col-6 col-md-6 mt-5 p-5 border m-auto">
+            <h5 class="text-uppercase">selecione el tipo de grafico</h5>
+
+            <div class="d-flex row mt-4">
+              <div class="col-6">
+                <button
+                  class="col-12 btn btn-primary"
+                  id="btn-exarrayProductt-chart"
+                >
+                  ExarrayProductt
+                </button>
+              </div>
+              <div class="col-6">
+                <select
+                  name="select-chart"
+                  id="select-chart"
+                  class="form-select mb-5"
+                >
+                  <option value="pie">Pai</option>
+                  <option value="bar">Bar</option>
+                  <option value="doughnut">Doughnut</option>
+                  <option value="line">Line</option>
+                </select>
+              </div>
+            </div>
+
+            <canvas id="task_chart_rearrayProductt"></canvas>
+            <!-- <div class="mt-5">
+              <button class="btn btn-sm btn-primary" id="btn-exarrayProductt-chart">
+                ExarrayProductt
+              </button>
+            </div> -->
+          </div>
+
+          <!-- <div class="mt-5">
+            <button class="btn btn-sm btn-primary" id="btn-exarrayProductt-chart">
+              ExarrayProductt
+            </button>
+          </div> -->
+        </div>
+      </div>
+    </main>
+    <!-- section del modal -->
+    <!-- <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+    >
+      Launch demo modal
+    </button> -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Filtro de tareas</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- tabla -->
+            <div class="table-responsive">
+              <table class="table table-hover table-bordered">
+                <thead>
+                  <tr>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Estado</th>
+                    <th>Fecha</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+              </table>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- !nota recurden que jquery debe estar antes, para que nuestro index.js pueda
+    
+  !usar las funciones de jquery -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"
+    integrity="sha512-lOrm9FgT1LKOJRUXF3tp6QaMorJftUjowOWiDcG5GFZ/q7ukof19V0HKx/GWzXCdt9zYju3/KhBNdCLzK8b90Q=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./jquery.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script> -->
+  <script src="sweetalert2.all.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
+
+  <script src="./task.js"></script>
+  <script src="./index.js"></script>
+  <script src="./chart-task.js"></script>
+</html>

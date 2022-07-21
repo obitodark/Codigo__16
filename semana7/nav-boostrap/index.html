@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewarrayProductt"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <div class="boxModal  ">
+ 
+      <div class="containerModal ">
+        <h2 class="modal-title">Detail</h2>
+        <div class="subcontainer">
+
+          <div class="col-5 m-4  position-relative">
+            <div id="carousel" class="carousel slide " data-bs-ride="true"> -->
+    <!-- btn_imagen -->
+
+    <!--      ********* -->
+
+    <!-- <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://source.unsplash.com/user/erondu/400x400?v=1"  class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://source.unsplash.com/user/erondu/400x400?v=2"  class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://source.unsplash.com/user/erondu/400x400?v=3"  class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="carousel-indicators    gaga"  >
+              <button class="my-3 btn_img" type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"><img class="d-block w-100"  src="https://source.unsplash.com/user/erondu/120x140?v=1" class="img-fluid"></button>
+              <button class="my-3 btn_img" type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"><img class="d-block w-100"  src="https://source.unsplash.com/user/erondu/120x140?v=2" class="img-fluid"></button>
+              <button class="my-3 btn_img"  type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"><img class="d-block w-100"  src="https://source.unsplash.com/user/erondu/120x140?v=3" class="img-fluid"></button>
+            </div>
+            
+          </div>
+         
+
+
+          <div class="col-5 m-4">
+            <h2>Audifonos</h2>
+           
+            <p class=" my-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. CorarrayProductis, sed natus a, maxime delectus sunt enim voluptas ex rem cupiditate qui temarrayProducte, harum eligendi architecto omnis sint sapiente officia quo.</p>
+             <h3>$1500 <del>$2000</del></h5>
+              <div class="col-6 form_spiner" >
+                <input class="form-control "  type="number" name="" id="">
+              </div>
+              
+            <div class="row justify-content-around my-4 " >
+              <button class="btn btn-primary col-4">Buy nows</button>
+              <button class="btn btn-outline-primary col-4">Add to Card</button>
+            </div>
+          </div>
+
+        </div>
+
+        
+
+      </div>
+    
+
+   </div> -->
+
+    <header>
+      <nav
+        class="shadow navbar navbar-expand-lg navbar-light bg-white py-2 fixed-top border"
+      >
+        <div class="container">
+          <a
+            class="navbar-brand d-flex justify-content-between align-items-center order-lg-0"
+            href="index.html"
+          >
+            <i class="bi bi-steam"></i>
+            <span class="text-uppercase fw-lighter ms-2">vitex</span>
+          </a>
+
+          <div class="order-lg-2 nav-btns">
+            <button type="button" class="btn position-relative">
+              <i class="bi bi-bag"></i>
+              <span
+                class="position-absolute top-0 start-100 translate-middle badge bg-danger"
+                >3</span
+              >
+            </button>
+            <button type="button" class="btn position-relative">
+              <i class="bi bi-bell"></i>
+              <span
+                class="position-absolute top-0 start-100 translate-middle badge bg-danger"
+                >1</span
+              >
+            </button>
+          </div>
+
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navMenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+            <ul class="navbar-nav mx-auto text-center">
+              <li class="nav-item px-2 py-2">
+                <a class="nav-link text-uppercase text-dark" href="#header"
+                  >home</a
+                >
+              </li>
+              <li class="nav-item px-2 py-2">
+                <a class="nav-link text-uppercase text-dark" href="#collection"
+                  >new</a
+                >
+              </li>
+              <li class="nav-item px-2 py-2 dropdown">
+                <a
+                  class="navbar-toggler nav-link text-uppercase text-dark"
+                  data-bs-target="#navMenu1"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  >category</a
+                >
+                <div class="collapse navbar-collapse order-lg-1" id="navMenu1">
+                  <ul class="dropdown-menu p-3">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <hr class="dropdown-divider" />
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item px-2 py-2">
+                <a class="nav-link text-uppercase text-dark" href="#blogs"
+                  >blogs</a
+                >
+              </li>
+              <li class="nav-item px-2 py-2">
+                <a class="nav-link text-uppercase text-dark" href="#about"
+                  >about us</a
+                >
+              </li>
+              <li class="nav-item px-2 py-2 border-0">
+                <a class="nav-link text-uppercase text-dark" href="#popular"
+                  ><img
+                    src="./img/image-avatar.png"
+                    width="40px"
+                    alt=""
+                    class="mx-3"
+                  />perfil</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container-fluid mt-5 pt-5">
+      <div id="container_list_prodcutos" class="row">
+        <!--CORIUSEL IMG  -->
+        <div class="carousel-img col-12">
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide"
+            data-bs-ride="false"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://es.beyondtype1.org/wp-content/uploads/2020/09/BT1-DE-HEADER-RAMONA.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>
+                    Some representative placeholder content for the first slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://es.beyondtype1.org/wp-content/uploads/2020/09/BT1-DE-HEADER-RAMONA.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>
+                    Some representative placeholder content for the second
+                    slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://es.beyondtype1.org/wp-content/uploads/2020/09/BT1-DE-HEADER-RAMONA.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>
+                    Some representative placeholder content for the third slide.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contenedor -->
+
+      <div class="container mt-5">
+        <div class="row border-danger">
+          <!-- <div class="col-2 border pt-2"> -->
+            <!-- card -->
+            <!-- <div class="card  my-2">
+              <div class="card-body">
+                <h5 class="card-title">Genero</h5>
+                <p class="card-text"> -->
+            <!-- chexkbox -->
+            <!-- <div class="form-check my-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                     Hombre
+                    </label>
+                    
+                  </div>
+                  <div class="form-check my-3">
+                    <input id="checkbox_mujer" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Mujer
+                    </label>
+                    
+                  </div>
+                  <div class="form-check my-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Niño
+                    </label>
+                    
+                  </div>
+                  
+                 
+                </p>
+                
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Ajustes</h5>
+                <p class="card-text">
+                  <!-- chexkbox -->
+            <!-- <div class="form-check my-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Default checkbox
+                    </label>
+                    
+                  </div>
+                  <div class="form-check my-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Default checkbox
+                    </label>
+                    
+                  </div>
+                  <div class="form-check my-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Default checkbox
+                    </label>
+                    
+                  </div>
+                  <div class="form-check my-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Default checkbox
+                    </label>
+                    
+                  </div>
+                  <div class="form-check my-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Default checkbox
+                    </label>
+                    
+                  </div>
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div> -->
+            <!-- color -->
+            <!-- <div class="car border my-3">
+              <div class="card-body">
+                <h5 class="card-title"> Color</h5>
+                <button class="btn btn-primary  btn-circle  p-2"></button>
+                <button class="btn btn-danger p-2"></button>
+                <button class="btn btn-warning p-2"></button>
+                <button class="btn btn-dark p-2"></button>
+                <button class="btn btn-success p-2"></button>
+                <button class="btn btn-ligth border-dark p-2"></button>
+              </div>
+
+            </div> -->
+            <!-- ajuste-price -->
+            <!-- <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"> Price</h5>
+                <div class="card-text d-flex">
+
+                  <div class=" mx-1">
+                    <span>Min</span>
+                    <input type="text" class="form-control border-primary">
+
+                  </div>
+                  <div class="mx-1">
+                    <span>Max</span>
+                    <input type="text" class="form-control border-primary">
+
+                  </div>
+                </div>
+                <div>
+                  <label for="customRange1" class="form-label">Example range</label>
+                   <input type="range" class="form-range" id="customRange1">
+                </div>
+              </div>
+            </div>
+          </div> -->
+            <!-- form buscar -->
+            <div
+              class="col-12 border d-flex flex-wrap"
+              style="background: #f2f2f2"
+            >
+              <div class="col-12 d-flex mb-5 justify-content-around p-4 border">
+                <div class="col-5">
+                  <input
+                    id="input_Search"
+                    class="form-control"
+                    type="text"
+                    placeholder="Search"
+                  />
+                  <input
+                    id="input_search"
+                    class="btn btn-primary"
+                    value="search"
+                    type="button"
+                  />
+                </div>
+
+                <div class="col-3">
+                  <select name="" id="" class="form-select">
+                    <option value="">Menor a mayor</option>
+                    <option value="">Mayor a menor</option>
+                    <option value="">Destacados</option>
+                    <option value="">Populares</option>
+                    <option value="">Fresco</option>
+                  </select>
+                </div>
+              </div>
+              <!-- list-products -->
+              <div class="productos container">
+                <div id="article" class="row justify-content-evenly"></div>
+                <nav aria-label="...">
+                  <ul class="pagination">
+                    <li class="page-item disabled">
+                      <span class="page-link">Previous</span>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item active" aria-current="page">
+                      <span class="page-link">2</span>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">4</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">5</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">Next</a>
+                    </li>
+                  </ul>
+                </nav>
+
+              <div class="container_details_product"></div>
+
+                <!-- <div class="detalle_tecnico py-5 row" style="height: 500px">
+                  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="pills-home-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-home"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-home"
+                        aria-selected="true"
+                      >
+                        Detalle
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="pills-profile-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-profile"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-profile"
+                        aria-selected="false"
+                      >
+                        Especificaciones
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link active"
+                        id="pills-contact-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-contact"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-contact"
+                        aria-selected="false"
+                      >
+                        Comentarios
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="tab-content row" id="pills-tabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="pills-home"
+                      role="tabpanel"
+                      aria-labelledby="pills-home-tab"
+                    >
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Animi voluptatem commodi odio dolores illo consectetur,
+                      eos rem nihil doloribus, impedit minus distinctio
+                      architecto. Eos eum reprehenderit soluta rerum. Ab,
+                      repellendus?
+                    </div>
+                    <div
+                      class="tab-pane fade row"
+                      id="pills-profile"
+                      role="tabpanel"
+                      aria-labelledby="pills-profile-tab"
+                    >
+                      <div class="table-responsive col-6">
+                        <table class="table col-5">
+                          <thead>
+                            <tr>
+                              <th scope="col-">#</th>
+                              <th scope="col"></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">Marca :</th>
+
+                              <td>Otto</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Modelo :</th>
+
+                              <td>Thornton</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Nombre :</th>
+
+                              <td>the Bird</td>
+                            </tr>
+
+                            <tr>
+                              <th scope="row">Categoria :</th>
+                              <td>Nombre :</td>
+                            </tr>
+
+                            <tr>
+                              <th scope="row">Origen :</th>
+
+                              <td>the Bird</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Peso:</th>
+
+                              <td>the Bird</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade scrollspy-example"
+                      id="pills-contact"
+                      role="tabpanel"
+                      aria-labelledby="pills-contact-tab"
+                    >
+                      <div class="comentarios">
+                        <div class="card">
+                          <h5 class="card-title">obtio</h5>
+                          <div class="card-body">
+                            <i class="bi bi-star-fill text-warning mx-1"></i>
+                            <i class="bi bi-star-fill text-warning mx-1"></i>
+                            <i class="bi bi-star-fill text-warning mx-1"></i>
+                            <p class="card-text">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Obcaecati qui id magni reprehenderit sequi.
+                              Debitis asperiores doloribus sapiente iure
+                              deserunt sit explicabo optio quaerat ducimus
+                              perspiciatis mollitia, exercitationem accusamus
+                              architecto.
+                            </p>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                          <h5 class="card-title">obtio</h5>
+                          <div class="card-body">
+                            <i class="bi bi-star-fill text-warning mx-1"></i>
+                            <i class="bi bi-star-fill text-warning mx-1"></i>
+                            <i class="bi bi-star-fill text-warning mx-1"></i>
+                            <p class="card-text">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Obcaecati qui id magni reprehenderit sequi.
+                              Debitis asperiores doloribus sapiente iure
+                              deserunt sit explicabo optio quaerat ducimus
+                              perspiciatis mollitia, exercitationem accusamus
+                              architecto.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+
+  <script src="./js/productos.js"></script>
+</html>
